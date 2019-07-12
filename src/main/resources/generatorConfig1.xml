@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/mysql?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;jdbcCompliantTruncation=false&amp;serverTimezone=GMT%2B8&amp;zeroDateTimeBehavior=convertToNull" driverClass="com.mysql.jdbc.Driver" password="1" userId="root" />
+    <javaModelGenerator targetPackage="com.uap.model" targetProject="interest-server/src/main/java/" />
+    <sqlMapGenerator targetPackage="com.mybatis.mapper" targetProject="interest-server/src/main/java/" />
+    <javaClientGenerator targetPackage="com.uap.dao" targetProject="interest-server/src/main/java/" type="MIXEDMAPPER" />
+    <table  tableName="ez_accountbook"  domainObjectName="AccountDayBooka">
+      <!-- <columnOverride column="???" property="???" /> -->      
+    </table>
+ <!--  <table  tableName="ez_accountbook"  domainObjectName="AccountDayBook"
+    	enableCountByExample="false"
+        enableUpdateByExample="false"
+        enableDeleteByExample="false"
+        enableSelectByExample="false"
+        selectByExampleQueryId="false"
+        >
+      <columnOverride column="???" property="???" />      
+    </table> -->
+  
+  </context>
+</generatorConfiguration>
