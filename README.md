@@ -1,4 +1,4 @@
-# interest-server
+# daybook-server
 
 ## 项目版本升级
 
@@ -8,39 +8,6 @@
 4. 客户的详细资料由手动在MyAuthorizationServerConfigurerAdapter中配置的，改为使用数据库配置（添加了oauth_client_details表）
 5. 用户密码加密由md5加密改为BCrypt加密
 6. 打包方式jar
-
-## 项目介绍
-
-spring boot项目,与我的另外一个前端项目[interest-web](https://github.com/smallsnail-wh/interest/tree/master/interest-web)搭配（前后端分离）。
-
-## 项目展示
-
-地址：http://www.lovemtt.com/
-可使用github登录
-（第一次打开可能会有点慢）
-
-项目目录结构
---
-```shell
-.
-└── src
-    ├── main  
-    │	├── java  
-    │	│   └── com.interest 
-    │	│	├── controller  controller类
-    │	│	├── dao  dao类
-    │	│	├── model  entity类
-    │	│	├── oauth2  spring security oauth2配置类
-    │	│	├── properties  项目配置类
-    │	│	├── security  spring security配置类
-    │	│	├── service  service类
-    │	│	└── utils  工具类
-    │	└── resource  
-    │	    ├── createTable 表数结构及表数据
-    │	    ├── mybatis.mapper mybatis的mapper.xml
-    │	    └── application.yml 项目配置文件
-    └── test  测试
-```
 
 ## 技术栈
 
@@ -60,7 +27,7 @@ spring boot项目,与我的另外一个前端项目[interest-web](https://github
 
 ## 数据库：
 
-使用mysql。（表与表数据在interest-server\src\main\resources\createTable中,用户密码为BCrypt加密，用户admin的密码为admin）
+使用mysql。（表与表数据在daybooke-server\src\main\resources\createTable中,用户密码为BCrypt加密，用户admin的密码为admin）
 
 **设计思路** 
 
@@ -78,7 +45,7 @@ spring boot项目,与我的另外一个前端项目[interest-web](https://github
   
  **数据库配置：**
  
- 数据库mysql（表与表数据在interest-server\src\main\resources\createTable中,用户密码为BCrypt加密，用户admin的密码为admin） 
+ 数据库mysql（表与表数据在daybooke-server\src\main\resources\createTable中,用户密码为BCrypt加密，用户admin的密码为admin） 
  
  **缓存配置：** 
  
