@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+		<spring-cloud.version>Greenwich.SR5</spring-cloud.version><!-- 替换来原来版本 -->
 		<org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
 		<m2e.apt.activation>jdt_apt</m2e.apt.activation>
 	</properties>
