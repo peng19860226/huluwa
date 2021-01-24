@@ -1,8 +1,6 @@
 package com.uap.controller;
 
 import java.util.List;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -52,10 +50,17 @@ public class BaseController<M extends IService<T>, T> {
         return Result.success(true);
     }
 
+//    @RequestMapping("selectByPage")
+//    @ResponseBody
+//    public Result<IPage<Map<String, Object>>> selectByPage(IPage<T> page,Wrapper<T> queryWrapper){
+//    	IPage<Map<String, Object>> pagelist = baseService.pageMaps(page, queryWrapper);
+// 
+//        return Result.success(pagelist);
+//    }
     @RequestMapping("selectByPage")
     @ResponseBody
-    public Result<IPage<Map<String, Object>>> selectByPage(IPage<T> page,Wrapper<T> queryWrapper){
-    	IPage<Map<String, Object>> pagelist = baseService.pageMaps(page, queryWrapper);
+    public Result<IPage<T>> selectByPage(IPage<T> page,Wrapper<T> queryWrapper){
+    	IPage<T> pagelist = baseService.page(page, queryWrapper);
  
         return Result.success(pagelist);
     }

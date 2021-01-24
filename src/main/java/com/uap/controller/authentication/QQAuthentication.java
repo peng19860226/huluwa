@@ -3,11 +3,8 @@ package com.uap.controller.authentication;
 import com.uap.controller.login.LoginFailureExcepiton;
 import com.uap.dao.UserDao;
 import com.uap.model.UserEntity;
-import com.uap.model.UserGithubEntity;
 import com.uap.model.UserQQEntity;
-import com.uap.properties.GithubProperties;
 import com.uap.properties.QQProperties;
-import com.uap.service.UserGithubService;
 import com.uap.service.UserQQService;
 import com.uap.utils.DateUtil;
 
@@ -19,8 +16,6 @@ import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 

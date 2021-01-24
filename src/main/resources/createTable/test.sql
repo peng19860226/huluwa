@@ -1,6 +1,6 @@
 drop table ez_accountbook;
 CREATE TABLE ez_accountbook (
-  id int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  id varchar(36) NOT NULL  COMMENT '主键',
   PRIMARY KEY (id),
   amount decimal(15,2) DEFAULT NULL COMMENT '金额',
   projectid varchar(50) DEFAULT NULL  COMMENT '项目',
@@ -16,7 +16,11 @@ CREATE TABLE ez_accountbook (
   ostctype integer(1) DEFAULT NULL  COMMENT '费用类型',
   paymentsproject varchar(50) DEFAULT NULL  COMMENT '收支项目',
   communicationtype decimal(1) DEFAULT NULL  COMMENT '通讯类型',
-  version integer DEFAULT 0 COMMENT '版本控制',
-   dr integer(1) DEFAULT 0 COMMENT '删除标记'
+  ts datetime DEFAULT CURRENT_TIMESTAMP COMMENT '版本控制',
+   dr integer(1) DEFAULT 0 COMMENT '删除标记',
+   modifier varchar(50) DEFAULT NULL  COMMENT '修改人',
+   creator varchar(50) DEFAULT NULL  COMMENT '创建人',
+   creationtime datetime DEFAULT NULL  COMMENT '创建时间',
+   modifiedtime datetime DEFAULT CURRENT_TIMESTAMP COMMENT '修改时间'
 )  ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='日记账表' ;
 select * from ez_accountbook

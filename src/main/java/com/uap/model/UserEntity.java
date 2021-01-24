@@ -2,11 +2,12 @@ package com.uap.model;
 
 import java.io.Serializable;
 
-/**
- * @author wanghuan
- *
- */
+
 public class UserEntity implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * id
 	 */

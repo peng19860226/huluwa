@@ -1,10 +1,7 @@
 package com.uap.service.impl;
 
-import com.uap.dao.UserGithubDao;
 import com.uap.dao.UserQQDao;
-import com.uap.model.UserGithubEntity;
 import com.uap.model.UserQQEntity;
-import com.uap.service.UserGithubService;
 import com.uap.service.UserQQService;
 
 import org.springframework.beans.factory.annotation.Autowired;

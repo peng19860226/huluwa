@@ -1,7 +1,6 @@
 package com.uap.controller.template;
 
 import com.uap.model.PageResult;
-import com.uap.model.utils.ResponseStatus;
 import com.uap.model.utils.ResponseWrapper;
 import com.uap.service.MsgRecordsService;
 import com.uap.utils.SecurityAuthenUtil;

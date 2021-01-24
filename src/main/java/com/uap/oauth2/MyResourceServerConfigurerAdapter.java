@@ -19,9 +19,10 @@ public class MyResourceServerConfigurerAdapter extends ResourceServerConfigurerA
 		.antMatchers("/register").permitAll()
 		.antMatchers("/exit").permitAll()
 		.antMatchers("/**/*.jpg","/**/*.png","/**/*.jpeg").permitAll()
+		 //以 "/admin/" 开头的URL只能让拥有 "ROLE_ADMIN"角色的用户访问。
+        //请注意我们使用 hasRole 方法，没有使用 "ROLE_" 前缀。 
 		.antMatchers("/users/**","/menus/**","/roles/**","/admin/**").hasRole("ADMIN")
-		.anyRequest()
-		.authenticated();
+		.anyRequest().authenticated();
 
 	}
 
